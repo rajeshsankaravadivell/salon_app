@@ -30,9 +30,12 @@ class MyApp extends StatelessWidget {
 
         ), ),
 
+        shadowColor: Colors.red,
+
 
         // is not restarted.
         primarySwatch: Colors.red,
+
       ),
       home: Login1Widget(),
     );

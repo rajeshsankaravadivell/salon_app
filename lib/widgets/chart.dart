@@ -2,7 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
 class LineChartSample5 extends StatelessWidget {
-  final List<int> showIndexes = const [1, 3, 5];
+  final List<int> showIndexes = const [1, 3, 5,6];
   final List<FlSpot> allSpots = const [
     FlSpot(0, 1),
     FlSpot(1, 2),
@@ -25,7 +25,7 @@ class LineChartSample5 extends StatelessWidget {
           barWidth: 4,
           shadow: const Shadow(
             blurRadius: 8,
-            color: Colors.black,
+            color: Colors.red,
           ),
           belowBarData: BarAreaData(
             show: true,
@@ -51,8 +51,8 @@ class LineChartSample5 extends StatelessWidget {
     final tooltipsOnBar = lineBarsData[0];
 
     return SizedBox(
-      width: 300,
-      height: 140,
+      width: 400,
+      height: 200,
       child: LineChart(
         LineChartData(
           showingTooltipIndicators: showIndexes.map((index) {
