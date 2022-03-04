@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:salon_app/screens/bottomrouter.dart';
 import 'package:salon_app/screens/login.dart';
 
 void main() {
@@ -16,6 +18,11 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+
+        textTheme: TextTheme(
+          headline3: GoogleFonts.montserrat(fontWeight: FontWeight.bold)
+        ),
+
         iconTheme: IconThemeData(
           color: Color(0xFFEE4E3A),
         ),
@@ -37,7 +44,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
 
       ),
-      home: Login1Widget(),
+      home:BottomNavRouter(),
     );
   }
 }

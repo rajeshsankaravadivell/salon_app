@@ -32,7 +32,7 @@ class _LineChartSample2State extends State<LineChartSample2> {
                 offset: Offset(0, 3)
               )],
                 borderRadius: BorderRadius.all(
-                  Radius.circular(18),
+                  Radius.circular(10),
                 ),
                 color: Colors.white),
             child: Padding(

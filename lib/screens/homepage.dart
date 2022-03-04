@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:salon_app/constants/themeconstants.dart';
 import 'package:salon_app/screens/appointment.dart';
 import 'package:salon_app/screens/calendar.dart';
@@ -33,45 +34,49 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(bottom: 16.0,top: 16.0),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: SizedBox(
+                width: getWidth(context)*1.2,
+                height: getHeight(context)*0.15,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
 
-                children: [
-                  CustomButton(
-                    onPressed: (){},
-                    title: 'Income',
-                    details: '50',
-                    asset: 'assets/income.png',
+                  children: [
+                    CustomButton(
+                      onPressed: (){},
+                      title: 'Income',
+                      details: '50',
+                      asset: 'assets/income.png',
 
-                  ),
-                  CustomButton(
-                    onPressed: (){},
-                    asset: 'assets/deadline.png',
-                    title: 'Income',
-                    details: '200',
+                    ),
+                    CustomButton(
+                      onPressed: (){},
+                      asset: 'assets/deadline.png',
+                      title: 'Income',
+                      details: '200',
 
 
-                  ),
-                  CustomButton(
-                    onPressed: (){},
-                    title: 'Income',
-                    details: '200',
-                    asset: 'assets/client.png',
+                    ),
+                    CustomButton(
+                      onPressed: (){},
+                      title: 'Income',
+                      details: '200',
+                      asset: 'assets/client.png',
 
-                  ), CustomButton(
-                    onPressed: (){},
-                    title: 'Income',
-                    details: '200',
-                    asset: 'assets/settings.png',
+                    ), CustomButton(
+                      onPressed: (){},
+                      title: 'Income',
+                      details: '200',
+                      asset: 'assets/settings.png',
 
-                  ),
-                ],
+                    ),
+                  ],
+                ),
               ),
             ),
             SizedBox(
-              height: getHeight(context) *0.65,
+              height: getHeight(context) *1.2,
               width: getWidth(context) * 1,
               child: Card(
                 elevation: 5,
@@ -91,7 +96,8 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           Tab(
                             child: Text(
                               'Sales Insight',
-                              style: TextStyle(
+                              style:
+                              TextStyle(
                                   fontSize: 20, fontWeight: FontWeight.bold),
                             ),
                           ),
@@ -109,35 +115,56 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                   body: TabBarView(
                     controller: _tabController1,
                     children:  [
-                      Center(
-                        child: Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: SingleChildScrollView(
+                      SizedBox(
+                        height: getHeight(context) *1.5,
+
+                        child: Center(
+                          child: Padding(
+                            padding: EdgeInsets.all(8.0),
                             child: Column(
                               children:  [
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Card(child: LineChartSample2()),
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Card(child: LineChartSample2()),
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Card(child: LineChartSample2()),
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
                                 ),
-                                Padding(
-                                  padding: EdgeInsets.all(8.0),
-                                  child: Card(child: LineChartSample2()),
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
                                 ),
                               ],
                             ),
                           ),
                         ),
                       ),
-                      Center(
-                        child: Text("It's rainy here"),
+                      SizedBox(
+                        height: getHeight(context) *1.2,
+                        child: Center(
+                          child: Text("It's rainy here"),
+                        ),
                       ),
                     ],
                   ),
@@ -166,39 +193,43 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return SizedBox(
       height: getHeight(context)*0.10,
-      width: getWidth(context)*0.23,
-      child: ElevatedButton(
-          style: ButtonStyle(
-            shape: MaterialStateProperty.all(RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(15.0)
+      width: getWidth(context)*0.25,
+      child: Padding(
+        padding: const EdgeInsets.all( 2.0),
+        child: ElevatedButton(
+            style: ButtonStyle(
+              shape: MaterialStateProperty.all(RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)
+              )),
+                backgroundColor:
+                    MaterialStateProperty.all(Colors.white)),
+            onPressed: () {},
+            child: Padding(
+              padding:  EdgeInsets.all(getHeight(context)*0.01.toDouble()),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+
+                children: [
+                  Image.asset(
+                    asset,
+
+                    height: 30,
+                    width: 30,
+                  ),
+                  Text(
+                    title,
+                    style: TextStyle(fontSize:13, color: Colors.black, ),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                  Text(
+                    details,
+                    style: getText(context).bodyText2,
+                  ),
+                ],
+              ),
             )),
-              backgroundColor:
-                  MaterialStateProperty.all(Colors.white)),
-          onPressed: () {},
-          child: Padding(
-            padding:  EdgeInsets.all(getHeight(context)*0.01.toDouble()),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-
-              children: [
-                Image.asset(
-                  asset,
-
-                  height: 30,
-                  width: 30,
-                ),
-                Text(
-                  title,
-                  style: getText(context).button,
-                ),
-                Text(
-                  details,
-                  style: getText(context).bodyText2,
-                ),
-              ],
-            ),
-          )),
+      ),
     );
   }
 }
