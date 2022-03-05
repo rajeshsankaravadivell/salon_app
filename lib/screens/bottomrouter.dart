@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:salon_app/constants/themeconstants.dart';
 import 'package:salon_app/screens/appointment.dart';
 import 'package:salon_app/screens/calendar.dart';
+import 'package:salon_app/screens/client.dart';
 import 'package:salon_app/screens/homepage.dart';
 import 'package:salon_app/screens/quicksale.dart';
 
@@ -19,7 +20,7 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
     HomePage(),
     QuidkSale(),
     Calendar(),
-    Appointment(),
+    Client(),
     QuidkSale(),
     Calendar(),
     Appointment(),

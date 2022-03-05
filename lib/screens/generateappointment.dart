@@ -4,28 +4,35 @@ import 'package:intl/intl.dart';
 
 enum ModeOfPayment { Cash, Card }
 
-class QuidkSale extends StatefulWidget {
-  const QuidkSale({Key? key}) : super(key: key);
+
+
+class GenerateAppointment extends StatefulWidget {
+  const GenerateAppointment({Key? key}) : super(key: key);
 
   @override
-  State<QuidkSale> createState() => _QuidkSaleState();
+  State<GenerateAppointment> createState() => _GenerateAppointmentState();
 }
 
-class _QuidkSaleState extends State<QuidkSale> {
+class _GenerateAppointmentState extends State<GenerateAppointment> {
   DateTime Today = DateTime.now();
   late String _loyaltycontroller;
+  late String _TimeController;
   ModeOfPayment? _method = ModeOfPayment.Cash;
 
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
-    _loyaltycontroller = 'select value';
+    _loyaltycontroller = 'Facial';
+    _TimeController = '1.00 PM';
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+
+      ),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -50,7 +57,7 @@ class _QuidkSaleState extends State<QuidkSale> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child:
-                              Text('${Today.day}:${Today.month}:${Today.year}'),
+                          Text('${Today.day}:${Today.month}:${Today.year}'),
                         ),
                       ),
                     ],
@@ -60,65 +67,49 @@ class _QuidkSaleState extends State<QuidkSale> {
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Row(
-                children: [
-                  Flexible(
-                    flex: 4,
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                        suffixIcon: Icon(
-                          Icons.search,
-                          color: Colors.red,
-                        ),
-                        labelText: 'Search Customer Name',
-                        labelStyle: TextStyle(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF95A1AC),
-                          fontSize: 14,
-                          fontWeight: FontWeight.normal,
-                        ),
-                        hintText: 'Search your text here...',
-                        hintStyle: TextStyle(
-                          fontFamily: 'Lexend Deca',
-                          color: Color(0xFF95A1AC),
-                          fontSize: 14,
-                          fontWeight: FontWeight.normal,
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Color(0xFFEE4E3A),
-                            width: 0.5,
-                          ),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color: Color(0xFFEE4E3A),
-                            width: 0.5,
-                          ),
-                          borderRadius: BorderRadius.circular(9),
-                        ),
-                        filled: false,
-                        fillColor: Color(0xFFFBEEE2),
-                      ),
-                      style: TextStyle(
-                        fontFamily: 'Lexend Deca',
-                        color: Color(0xFF2B343A),
-                        fontSize: 14,
-                        fontWeight: FontWeight.normal,
-                      ),
-                    ),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  suffixIcon: Icon(
+                    Icons.search,
+                    color: Colors.red,
                   ),
-                  Flexible(
-                    flex: 1,
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-                      child: ElevatedButton(
-                          onPressed: () {},
-                          child: Icon(Icons.person_pin_rounded)),
+                  labelText: 'Search Customer Name',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Search your text here...',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
                     ),
-                  )
-                ],
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: false,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
               ),
             ),
             CustomButton(
@@ -129,22 +120,8 @@ class _QuidkSaleState extends State<QuidkSale> {
               ),
               OnPressed: () {},
             ),
-            CustomButton(
-              title: 'Add Product',
-              icon: Icon(
-                Icons.add_circle,
-                color: Colors.red,
-              ),
-              OnPressed: () {},
-            ),
-            CustomButton(
-              title: 'Add Membership',
-              icon: Icon(
-                Icons.add_circle,
-                color: Colors.red,
-              ),
-              OnPressed: () {},
-            ),
+
+
             CustomButton(
               title: 'Add Packages',
               icon: Icon(
@@ -153,28 +130,21 @@ class _QuidkSaleState extends State<QuidkSale> {
               ),
               OnPressed: () {},
             ),
-            CustomButton(
-              title: 'Gift Card',
-              icon: Icon(
-                Icons.add_circle,
-                color: Colors.red,
-              ),
-              OnPressed: () {},
-            ),
+
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: SizedBox(
                 // width: getWidth(context)*0.90,
                 child: DropdownButtonFormField<String>(
                     decoration: InputDecoration(
-                      labelText: 'Loyalty Point',
+                      labelText: 'Services',
                       labelStyle: TextStyle(
                         fontFamily: 'Lexend Deca',
                         color: Color(0xFF95A1AC),
                         fontSize: 14,
                         fontWeight: FontWeight.normal,
                       ),
-                      hintText: 'Loyalty point',
+                      hintText: 'Services',
                       hintStyle: TextStyle(
                         fontFamily: 'Lexend Deca',
                         color: Color(0xFF95A1AC),
@@ -199,16 +169,16 @@ class _QuidkSaleState extends State<QuidkSale> {
                       fillColor: Color(0xFFFBEEE2),
                     ),
                     value: _loyaltycontroller,
-                    items: ['select value', 'value1', 'value2']
+                    items: ['Facial', 'Haircut', 'Pedicure']
                         .map((label) => DropdownMenuItem(
-                              child: Text(
-                                label.toString(),
-                                style: getText(context)
-                                    .labelLarge!
-                                    .apply(color: Colors.grey),
-                              ),
-                              value: label,
-                            ))
+                      child: Text(
+                        label.toString(),
+                        style: getText(context)
+                            .labelLarge!
+                            .apply(color: Colors.grey),
+                      ),
+                      value: label,
+                    ))
                         .toList(),
                     onChanged: (value) {
                       setState(() {
@@ -222,14 +192,14 @@ class _QuidkSaleState extends State<QuidkSale> {
                   left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
               child: TextFormField(
                 decoration: InputDecoration(
-                  labelText: 'Discount',
+                  labelText: 'Staff',
                   labelStyle: TextStyle(
                     fontFamily: 'Lexend Deca',
                     color: Color(0xFF95A1AC),
                     fontSize: 14,
                     fontWeight: FontWeight.normal,
                   ),
-                  hintText: 'Discount',
+                  hintText: 'Type Staff Name',
                   hintStyle: TextStyle(
                     fontFamily: 'Lexend Deca',
                     color: Color(0xFF95A1AC),
@@ -267,14 +237,14 @@ class _QuidkSaleState extends State<QuidkSale> {
                 // width: getWidth(context)*0.90,
                 child: DropdownButtonFormField<String>(
                     decoration: InputDecoration(
-                      labelText: 'Discount Type',
+                      labelText: 'Services',
                       labelStyle: TextStyle(
                         fontFamily: 'Lexend Deca',
                         color: Color(0xFF95A1AC),
                         fontSize: 14,
                         fontWeight: FontWeight.normal,
                       ),
-                      hintText: 'Discount Type',
+                      hintText: 'Services',
                       hintStyle: TextStyle(
                         fontFamily: 'Lexend Deca',
                         color: Color(0xFF95A1AC),
@@ -298,25 +268,202 @@ class _QuidkSaleState extends State<QuidkSale> {
                       filled: true,
                       fillColor: Color(0xFFFBEEE2),
                     ),
-                    value: _loyaltycontroller,
-                    items: ['select value', 'value1', 'value2']
+                    value: _TimeController,
+                    items: ['1.00 PM', '12.00 PM', '8.00 AM']
                         .map((label) => DropdownMenuItem(
-                              child: Text(
-                                label.toString(),
-                                style: getText(context)
-                                    .labelLarge!
-                                    .apply(color: Colors.grey),
-                              ),
-                              value: label,
-                            ))
+                      child: Text(
+                        label.toString(),
+                        style: getText(context)
+                            .labelLarge!
+                            .apply(color: Colors.grey),
+                      ),
+                      value: label,
+                    ))
                         .toList(),
                     onChanged: (value) {
                       setState(() {
-                        _loyaltycontroller = value!;
+                        _TimeController = value!;
                       });
                     }),
               ),
             ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Qty',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Type Number Of Qty',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Price',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Type Price Amount',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Discount',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Type Discount Amount',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Total',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Total',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+
             Wrap(
               direction: Axis.horizontal,
               spacing: 2,
@@ -406,14 +553,14 @@ class _QuidkSaleState extends State<QuidkSale> {
                       width: getWidth(context) * 0.50,
                       child: TextFormField(
                         decoration: InputDecoration(
-                          labelText: 'Discount',
+                          labelText: 'Coupon Code',
                           labelStyle: TextStyle(
                             fontFamily: 'Lexend Deca',
                             color: Color(0xFF95A1AC),
                             fontSize: 14,
                             fontWeight: FontWeight.normal,
                           ),
-                          hintText: 'Discount',
+                          hintText: 'Type Coupon Code',
                           hintStyle: TextStyle(
                             fontFamily: 'Lexend Deca',
                             color: Color(0xFF95A1AC),
@@ -447,7 +594,7 @@ class _QuidkSaleState extends State<QuidkSale> {
                     ),
                   ),
                   ElevatedButton(onPressed: () {}, child: SizedBox(
-                      height: getHeight(context)*0.06,
+                    height: getHeight(context)*0.06,
                       width: getWidth(context)*0.30,
 
                       child: Center(child: Text('Apply'))))
@@ -591,9 +738,9 @@ class _QuidkSaleState extends State<QuidkSale> {
 class CustomButton extends StatelessWidget {
   const CustomButton(
       {Key? key,
-      required this.title,
-      required this.icon,
-      required this.OnPressed})
+        required this.title,
+        required this.icon,
+        required this.OnPressed})
       : super(key: key);
   final String title;
   final Icon icon;
@@ -629,7 +776,8 @@ class CustomButton extends StatelessWidget {
                 ),
               ],
             ),
-          )),
+          ),
+      ),
     );
   }
 }
