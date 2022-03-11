@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:salon_app/constants/themeconstants.dart';
+import 'package:salon_app/screens/add/addmainpage.dart';
 import 'package:salon_app/screens/appointment.dart';
 import 'package:salon_app/screens/calendar.dart';
 import 'package:salon_app/screens/client/client.dart';
 import 'package:salon_app/screens/homepage.dart';
+import 'package:salon_app/screens/marketing/marketinghome.dart';
 import 'package:salon_app/screens/quicksale.dart';
+import 'package:salon_app/screens/report/reporthome.dart';
+
+import 'package:salon_app/screens/settings/settings/integerationhome.dart';
+import 'package:salon_app/screens/settings/settings/settings.dart';
 
 class BottomNavRouter extends StatefulWidget {
   const BottomNavRouter({Key? key}) : super(key: key);
@@ -21,12 +27,12 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
     QuidkSale(),
     Calendar(),
     Client(),
-    QuidkSale(),
-    Calendar(),
     Appointment(),
-    Calendar(),
+    AddMainPage(),
+    ReportHome(),
+    MarketingHome(),
     Appointment(),
-    Calendar(),
+    Settings(),
 
   ];
 
@@ -45,6 +51,7 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         toolbarHeight: getHeight(context)*0.1,
         actions: [
           Padding(
@@ -61,12 +68,12 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
           child: TextFormField(
 
             decoration: InputDecoration(
-              suffixIcon: Icon(Icons.search,color: Colors.red,),
+              suffixIcon: const Icon(Icons.search,color: Colors.red,),
 
 
               labelText: 'Search',
               labelStyle:
-              TextStyle(
+              const TextStyle(
                 fontFamily: 'Lexend Deca',
                 color: Color(0xFF95A1AC),
                 fontSize: 14,
@@ -74,32 +81,32 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
               ),
               hintText: 'Type Your Text Here...',
               hintStyle:
-              TextStyle(
+              const TextStyle(
                 fontFamily: 'Lexend Deca',
                 color: Color(0xFF95A1AC),
                 fontSize: 14,
                 fontWeight: FontWeight.normal,
               ),
               enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Color(0xFFEE4E3A),
                   width: 0.5,
                 ),
                 borderRadius: BorderRadius.circular(9),
               ),
               focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(
+                borderSide: const BorderSide(
                   color: Color(0xFFEE4E3A),
                   width: 0.5,
                 ),
                 borderRadius: BorderRadius.circular(9),
               ),
               filled: false,
-              fillColor: Color(0xFFFBEEE2),
+              fillColor: const Color(0xFFFBEEE2),
 
             ),
             style:
-            TextStyle(
+            const TextStyle(
               fontFamily: 'Lexend Deca',
               color: Color(0xFF2B343A),
               fontSize: 14,
@@ -116,7 +123,7 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
 
 
       bottomNavigationBar: Card(
-        shape: RoundedRectangleBorder(
+        shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.only(topRight: Radius.circular(100),topLeft: Radius.circular(100)),
         ),
         elevation: 5,
@@ -126,7 +133,7 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
             width: getWidth(context)*2,
             child: BottomNavigationBar(
 
-              unselectedIconTheme: IconThemeData(
+              unselectedIconTheme: const IconThemeData(
                 color: Colors.black54
               ),
               items: const [
@@ -148,7 +155,7 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
               selectedItemColor: Colors.red,
               showUnselectedLabels: true,
               unselectedItemColor: Colors.black,
-              unselectedLabelStyle: TextStyle(color: Colors.black),
+              unselectedLabelStyle: const TextStyle(color: Colors.black),
               onTap: _onItemTapped,
             ),
           ),

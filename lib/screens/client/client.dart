@@ -49,9 +49,9 @@ class _ClientState extends State<Client> {
                         Icons.add,
                         color: iconcolor,
                       ),
-                      title: Text('New Booking'),
+                      title: Text('Import Client'),
                       onTap: () {
-                        Get.to(GenerateAppointment());
+
                       },
                     ),
                   ),
@@ -61,9 +61,9 @@ class _ClientState extends State<Client> {
                         Icons.add,
                         color: iconcolor,
                       ),
-                      title: Text('Add Block Time'),
+                      title: Text('Export'),
                       onTap: () {
-                        Get.to(AddBlockTime());
+
                       },
                     ),
                   ),
@@ -92,9 +92,9 @@ class _ClientState extends State<Client> {
                         Icons.add,
                         color: iconcolor,
                       ),
-                      title: Text('New Booking'),
+                      title: Text('Import Client'),
                       onTap: () {
-                        Get.to(GenerateAppointment());
+
                       },
                     ),
                   ),
@@ -104,9 +104,9 @@ class _ClientState extends State<Client> {
                         Icons.add,
                         color: iconcolor,
                       ),
-                      title: Text('Add Block Time'),
+                      title: Text('Export'),
                       onTap: () {
-                        Get.to(AddBlockTime());
+
                       },
                     ),
                   ),
@@ -158,7 +158,7 @@ class _ClientState extends State<Client> {
                       child: CircleAvatar(
                         radius: getWidth(context) * 0.08,
                         child: Image.network(
-                            'https://cdn-icons.flaticon.com/png/512/2202/premium/2202112.png?token=exp=1646563810~hmac=3d07ce6903585dbafb0510c6680be89e'),
+                            'https://previews.123rf.com/images/metelsky/metelsky1904/metelsky190400021/121859823-male-avatar-icon-or-portrait-handsome-young-man-face-with-beard-vector-illustration-.jpg'),
                       ),
                     ),
                     Table(

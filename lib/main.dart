@@ -21,6 +21,8 @@ class MyApp extends StatelessWidget {
 
         textTheme: TextTheme(
           headline3: GoogleFonts.montserrat(fontWeight: FontWeight.bold)
+
+
         ),
 
         iconTheme: IconThemeData(
@@ -37,6 +39,17 @@ class MyApp extends StatelessWidget {
 
         ), ),
 
+        chipTheme: ChipThemeData(
+            selectedColor: Colors.red,
+            disabledColor: Colors.white,
+          side: BorderSide(
+            color: Colors.red,
+            width: 1
+
+
+          )
+        ),
+
         shadowColor: Colors.red,
 
 
@@ -44,7 +57,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
 
       ),
-      home:BottomNavRouter(),
+      home:Login1Widget(),
     );
   }
 }

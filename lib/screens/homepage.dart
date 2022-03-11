@@ -161,9 +161,48 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                         ),
                       ),
                       SizedBox(
-                        height: getHeight(context) *1.2,
+                        height: getHeight(context) *1.5,
+
                         child: Center(
-                          child: Text("It's rainy here"),
+                          child: Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Column(
+                              children:  [
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
+                                ),
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
+                                ),
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
+                                ),
+                                Flexible(
+                                  flex:
+                                  1,
+                                  child: Padding(
+                                    padding: EdgeInsets.all(8.0),
+                                    child: Card(child: LineChartSample2()),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
                     ],

@@ -131,7 +131,271 @@ class _AddClientState extends State<AddClient> {
                   left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
               child: TextFormField(
                 decoration: InputDecoration(
-                  labelText: 'Discount',
+                  labelText: 'Name',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Name',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Contact',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Contact',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Email',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Date Of Birth',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'DOA',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'DOA',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Select Gender',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Address',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Address',
+                  labelStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  hintText: 'Address',
+                  hintStyle: TextStyle(
+                    fontFamily: 'Lexend Deca',
+                    color: Color(0xFF95A1AC),
+                    fontSize: 14,
+                    fontWeight: FontWeight.normal,
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Color(0xFFEE4E3A),
+                      width: 0.5,
+                    ),
+                    borderRadius: BorderRadius.circular(9),
+                  ),
+                  filled: true,
+                  fillColor: Color(0xFFFBEEE2),
+                ),
+                style: TextStyle(
+                  fontFamily: 'Lexend Deca',
+                  color: Color(0xFF2B343A),
+                  fontSize: 14,
+                  fontWeight: FontWeight.normal,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(
+                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
+              child: TextFormField(
+                decoration: InputDecoration(
+                  labelText: 'Card number',
                   labelStyle: TextStyle(
                     fontFamily: 'Lexend Deca',
                     color: Color(0xFF95A1AC),
@@ -175,14 +439,14 @@ class _AddClientState extends State<AddClient> {
                   left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
               child: TextFormField(
                 decoration: InputDecoration(
-                  labelText: 'Discount',
+                  labelText: 'Reward',
                   labelStyle: TextStyle(
                     fontFamily: 'Lexend Deca',
                     color: Color(0xFF95A1AC),
                     fontSize: 14,
                     fontWeight: FontWeight.normal,
                   ),
-                  hintText: 'Discount',
+                  hintText: 'Reward',
                   hintStyle: TextStyle(
                     fontFamily: 'Lexend Deca',
                     color: Color(0xFF95A1AC),
@@ -220,278 +484,14 @@ class _AddClientState extends State<AddClient> {
               child: TextFormField(
                 decoration: InputDecoration(
                   labelText: 'Discount',
-                  labelStyle: TextStyle(
+                  labelStyle: const TextStyle(
                     fontFamily: 'Lexend Deca',
                     color: Color(0xFF95A1AC),
                     fontSize: 14,
                     fontWeight: FontWeight.normal,
                   ),
                   hintText: 'Discount',
-                  hintStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFFBEEE2),
-                ),
-                style: TextStyle(
-                  fontFamily: 'Lexend Deca',
-                  color: Color(0xFF2B343A),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Discount',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  hintText: 'Discount',
-                  hintStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFFBEEE2),
-                ),
-                style: TextStyle(
-                  fontFamily: 'Lexend Deca',
-                  color: Color(0xFF2B343A),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Discount',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  hintText: 'Discount',
-                  hintStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFFBEEE2),
-                ),
-                style: TextStyle(
-                  fontFamily: 'Lexend Deca',
-                  color: Color(0xFF2B343A),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Discount',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  hintText: 'Discount',
-                  hintStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFFBEEE2),
-                ),
-                style: TextStyle(
-                  fontFamily: 'Lexend Deca',
-                  color: Color(0xFF2B343A),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Discount',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  hintText: 'Discount',
-                  hintStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFFBEEE2),
-                ),
-                style: TextStyle(
-                  fontFamily: 'Lexend Deca',
-                  color: Color(0xFF2B343A),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Discount',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  hintText: 'Discount',
-                  hintStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: Color(0xFFEE4E3A),
-                      width: 0.5,
-                    ),
-                    borderRadius: BorderRadius.circular(9),
-                  ),
-                  filled: true,
-                  fillColor: Color(0xFFFBEEE2),
-                ),
-                style: TextStyle(
-                  fontFamily: 'Lexend Deca',
-                  color: Color(0xFF2B343A),
-                  fontSize: 14,
-                  fontWeight: FontWeight.normal,
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 16.0, right: 16.0, top: 8.0, bottom: 8.0),
-              child: TextFormField(
-                decoration: InputDecoration(
-                  labelText: 'Discount',
-                  labelStyle: TextStyle(
-                    fontFamily: 'Lexend Deca',
-                    color: Color(0xFF95A1AC),
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                  hintText: 'Discount',
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     fontFamily: 'Lexend Deca',
                     color: Color(0xFF95A1AC),
                     fontSize: 14,

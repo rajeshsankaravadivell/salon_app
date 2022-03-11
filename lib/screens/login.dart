@@ -4,7 +4,9 @@ import 'package:get/get.dart';
 
 import 'package:google_fonts/google_fonts.dart';
 import 'package:salon_app/constants/themeconstants.dart';
+import 'package:salon_app/screens/bottomrouter.dart';
 import 'package:salon_app/screens/homepage.dart';
+import 'package:salon_app/screens/registrationpage.dart';
 
 class Login1Widget extends StatefulWidget {
   const Login1Widget({Key? key}) : super(key: key);
@@ -163,7 +165,7 @@ class _Login1WidgetState extends State<Login1Widget> {
                     width: getWidth(context)*0.50,
                     height: getHeight(context)*0.05,
                     child: ElevatedButton(onPressed: (){
-                      Get.to(()=>HomePage());
+                      Get.to(()=>BottomNavRouter());
 
                     }, child:Text('login'))),
               ),
@@ -188,7 +190,10 @@ class _Login1WidgetState extends State<Login1Widget> {
                         fontWeight: FontWeight.normal,
                       ),
                     ),
-                    TextButton(onPressed: (){}, child: Text('Register'))
+                    TextButton(onPressed: (){
+                      Get.to(RegisterationWidget());
+
+                    }, child: Text('Register'))
                   ],
                 ),
               ),
