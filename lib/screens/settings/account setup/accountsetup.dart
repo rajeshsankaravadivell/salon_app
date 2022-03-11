@@ -5,7 +5,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:salon_app/screens/settings/account%20setup/customfields.dart';
 import 'package:salon_app/screens/settings/settings/integerationform.dart';
 
-import 'profile_setup.dart';
+import '../account setup/notification_setting.dart';
+import '../account setup/profile_setup.dart';
 import '../settings/integeration.dart';
 
 class AccountSetup extends StatefulWidget {
@@ -48,7 +49,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/bell.png',
               text: 'Notification',
               onPressed: () {
-                Get.to(() => const InteregerationForm());
+                Get.to(() => NotificationSetting());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
@@ -58,7 +59,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/list.png',
               text: 'Custom Field',
               onPressed: () {
-                Get.to(() =>  CustomFields());
+                Get.to(() => CustomFields());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
