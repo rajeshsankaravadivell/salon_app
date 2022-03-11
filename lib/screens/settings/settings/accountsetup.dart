@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:salon_app/screens/settings/settings/integerationform.dart';
 
+import '../account setup/notification_setting.dart';
 import '../account setup/profile_setup.dart';
 import 'integeration.dart';
 
@@ -47,7 +48,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/bell.png',
               text: 'Notification',
               onPressed: () {
-                Get.to(() => const InteregerationForm());
+                Get.to(() => NotificationSetting());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
