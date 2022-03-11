@@ -1,10 +1,10 @@
-
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:salon_app/screens/settings/settings/integerationform.dart';
 
+import '../account setup/profile_setup.dart';
 import 'integeration.dart';
 
 class AccountSetup extends StatefulWidget {
@@ -28,7 +28,7 @@ class _AccountSetupState extends State<AccountSetup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // key: scaffoldKey,
+        // key: scaffoldKey,
         backgroundColor: Colors.white,
         body: GridView.count(
           padding: const EdgeInsets.all(16.0),
@@ -40,16 +40,14 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/user-profile.png',
               text: 'Profile Setup',
               onPressed: () {
-
-                Get.to(()=>const InteregerationForm());
-
+                Get.to(() => const ProfileSetupForm());
               },
             ),
             SettingsTile(
               image: 'assets/settings/bell.png',
               text: 'Notification',
               onPressed: () {
-                Get.to(()=>const InteregerationForm());
+                Get.to(() => const InteregerationForm());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
@@ -59,7 +57,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/list.png',
               text: 'Custom Field',
               onPressed: () {
-                Get.to(()=>const InteregerationForm());
+                Get.to(() => const InteregerationForm());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
@@ -69,7 +67,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/google-forms.png',
               text: 'Form',
               onPressed: () {
-                Get.to(()=>const InteregerationForm());
+                Get.to(() => const InteregerationForm());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
@@ -79,7 +77,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/booking.png',
               text: 'Booking settings',
               onPressed: () {
-                Get.to(()=>const InteregerationForm());
+                Get.to(() => const InteregerationForm());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
@@ -89,15 +87,12 @@ class _AccountSetupState extends State<AccountSetup> {
               image: '',
               text: 'Google Calendar',
               onPressed: () {
-                Get.to(()=>const InteregerationForm());
+                Get.to(() => const InteregerationForm());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
               },
             ),
-
-
-
           ],
         ));
   }
