@@ -2,10 +2,11 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:salon_app/screens/settings/account%20setup/customfields.dart';
 import 'package:salon_app/screens/settings/settings/integerationform.dart';
 
-import '../account setup/profile_setup.dart';
-import 'integeration.dart';
+import 'profile_setup.dart';
+import '../settings/integeration.dart';
 
 class AccountSetup extends StatefulWidget {
   const AccountSetup({Key? key}) : super(key: key);
@@ -57,7 +58,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/list.png',
               text: 'Custom Field',
               onPressed: () {
-                Get.to(() => const InteregerationForm());
+                Get.to(() =>  CustomFields());
                 if (kDebugMode) {
                   print("I am tapped");
                 }

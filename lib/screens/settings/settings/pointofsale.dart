@@ -2,9 +2,12 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:salon_app/screens/settings/settings/integerationform.dart';
 
+import './integerationform.dart';
 import 'integeration.dart';
+
+
+
 
 class PointOfSale extends StatefulWidget {
   const PointOfSale({Key? key}) : super(key: key);

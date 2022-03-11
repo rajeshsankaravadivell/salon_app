@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:salon_app/constants/themeconstants.dart';
 import 'package:salon_app/screens/bottomrouter.dart';
 import 'package:salon_app/screens/login.dart';
 
@@ -40,6 +41,9 @@ class MyApp extends StatelessWidget {
         ), ),
 
         chipTheme: ChipThemeData(
+          labelStyle: getText(context).bodyText1?.apply(color: Colors.black),
+            secondaryLabelStyle: getText(context).bodyText1,
+
             selectedColor: Colors.red,
             disabledColor: Colors.white,
           side: BorderSide(
@@ -55,6 +59,7 @@ class MyApp extends StatelessWidget {
 
         // is not restarted.
         primarySwatch: Colors.red,
+
 
       ),
       home:Login1Widget(),

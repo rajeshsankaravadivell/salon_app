@@ -4,7 +4,7 @@ import 'package:salon_app/constants/themeconstants.dart';
 import 'package:salon_app/screens/appointment.dart';
 import 'package:salon_app/screens/calendar.dart';
 import 'package:salon_app/screens/quicksale.dart';
-import 'package:salon_app/screens/settings/settings/accountsetup.dart';
+import 'package:salon_app/screens/settings/account%20setup/accountsetup.dart';
 import 'package:salon_app/screens/settings/settings/integeration.dart';
 import 'package:salon_app/screens/settings/settings/integerationhome.dart';
 import 'package:salon_app/screens/settings/settings/pointofsale.dart';

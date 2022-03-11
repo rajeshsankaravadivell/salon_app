@@ -4,6 +4,7 @@ import 'package:salon_app/screens/add/addmainpage.dart';
 import 'package:salon_app/screens/appointment.dart';
 import 'package:salon_app/screens/calendar.dart';
 import 'package:salon_app/screens/client/client.dart';
+import 'package:salon_app/screens/expense/expensehome.dart';
 import 'package:salon_app/screens/homepage.dart';
 import 'package:salon_app/screens/marketing/marketinghome.dart';
 import 'package:salon_app/screens/quicksale.dart';
@@ -31,7 +32,7 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
     AddMainPage(),
     ReportHome(),
     MarketingHome(),
-    Appointment(),
+    ExpenseHome(),
     Settings(),
 
   ];
