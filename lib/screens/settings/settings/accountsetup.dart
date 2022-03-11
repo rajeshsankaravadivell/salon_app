@@ -86,7 +86,7 @@ class _AccountSetupState extends State<AccountSetup> {
               },
             ),
             SettingsTile(
-              image: '',
+              image: 'assets/settings/software-engineer.png',
               text: 'Google Calendar',
               onPressed: () {
                 Get.to(()=>const InteregerationForm());
