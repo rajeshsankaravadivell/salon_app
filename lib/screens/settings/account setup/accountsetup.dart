@@ -2,7 +2,9 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:salon_app/screens/settings/account%20setup/bookingsettings.dart';
 import 'package:salon_app/screens/settings/account%20setup/customfields.dart';
+import 'package:salon_app/screens/settings/account%20setup/form.dart';
 import 'package:salon_app/screens/settings/settings/integerationform.dart';
 
 import '../account setup/notification_setting.dart';
@@ -30,6 +32,7 @@ class _AccountSetupState extends State<AccountSetup> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
         // key: scaffoldKey,
         backgroundColor: Colors.white,
         body: GridView.count(
@@ -69,7 +72,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/google-forms.png',
               text: 'Form',
               onPressed: () {
-                Get.to(() => const InteregerationForm());
+                Get.to(() => const AccountSetupForm());
                 if (kDebugMode) {
                   print("I am tapped");
                 }
@@ -79,7 +82,7 @@ class _AccountSetupState extends State<AccountSetup> {
               image: 'assets/settings/booking.png',
               text: 'Booking settings',
               onPressed: () {
-                Get.to(() => const InteregerationForm());
+                Get.to(() => const BookingSettings());
                 if (kDebugMode) {
                   print("I am tapped");
                 }

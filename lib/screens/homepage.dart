@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           child: Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Column(
-                              children:  [
+                              children:  const [
                                 Flexible(
                                   flex:
                                   1,
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           child: Padding(
                             padding: EdgeInsets.all(8.0),
                             child: Column(
-                              children:  [
+                              children:  const [
                                 Flexible(
                                   flex:
                                   1,
@@ -256,10 +256,13 @@ class CustomButton extends StatelessWidget {
                     height: 30,
                     width: 30,
                   ),
-                  Text(
-                    title,
-                    style: TextStyle(fontSize:13, color: Colors.black, ),
-                    overflow: TextOverflow.ellipsis,
+                  Flexible(
+                    flex: 1,
+                    child: Text(
+                      title,
+                      style: TextStyle(fontSize:13, color: Colors.black, ),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                   Text(
                     details,

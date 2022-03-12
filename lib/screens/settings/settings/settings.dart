@@ -37,15 +37,8 @@ class _SettingsState extends State<Settings> with TickerProviderStateMixin {
         bottom: PreferredSize(
           preferredSize: Size.fromHeight(20),
           child: TabBar(
-            labelColor: Colors.white,
-            unselectedLabelColor:Colors.red,
 
-            indicator:  BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(100.0)),
 
-                color: Colors.redAccent
-
-            ),
 
             controller: _tabController1,
             tabs: const [
@@ -57,21 +50,21 @@ class _SettingsState extends State<Settings> with TickerProviderStateMixin {
                   TextStyle(
 
 
-                      fontSize: 16, fontWeight: FontWeight.bold),
+                      fontSize: 13, fontWeight: FontWeight.bold),
                 ),
               ),
               Tab(
                 child: Text(
                   'Point Of Sale',
                   style: TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.bold),
+                      fontSize: 13, fontWeight: FontWeight.bold),
                 ),
               ),
               Tab(
                 child: Text(
                   'Integration',
                   style: TextStyle(
-                      fontSize: 16, fontWeight: FontWeight.bold),
+                      fontSize: 13, fontWeight: FontWeight.bold),
                 ),
               ),
             ],

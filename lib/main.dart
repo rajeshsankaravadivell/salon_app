@@ -19,6 +19,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          titleTextStyle: getText(context).headline6?.copyWith(color: Colors.black)
+
+        ),
 
         textTheme: TextTheme(
           headline3: GoogleFonts.montserrat(fontWeight: FontWeight.bold)
@@ -29,16 +33,20 @@ class MyApp extends StatelessWidget {
         iconTheme: IconThemeData(
           color: Color(0xFFEE4E3A),
         ),
+      //   tabBarTheme: TabBarTheme(
+      //     labelColor: Colors.white,
+      //     unselectedLabelColor:Colors.red,
+      //
+      //     indicator:  BoxDecoration(
+      //         borderRadius: BorderRadius.all(Radius.circular(10.0)),
+      //
+      // color: Colors.redAccent
+      //
+      //   ), ),
         tabBarTheme: TabBarTheme(
-          labelColor: Colors.white,
-          unselectedLabelColor:Colors.red,
-
-          indicator:  BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(10.0)),
-
-      color: Colors.redAccent
-
-        ), ),
+          labelColor: Colors.red,
+          unselectedLabelColor:Colors.black,
+        ),
 
         chipTheme: ChipThemeData(
           labelStyle: getText(context).bodyText1?.apply(color: Colors.black),
