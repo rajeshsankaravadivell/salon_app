@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:salon_app/constants/themeconstants.dart';
-import 'package:salon_app/screens/bottomrouter.dart';
+
 import 'package:salon_app/screens/login.dart';
 
 void main() {
@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
           titleTextStyle: getText(context).headline6?.copyWith(color: Colors.black)
 
         ),
+
+        platform: TargetPlatform.android,
 
         textTheme: TextTheme(
           headline3: GoogleFonts.montserrat(fontWeight: FontWeight.bold)

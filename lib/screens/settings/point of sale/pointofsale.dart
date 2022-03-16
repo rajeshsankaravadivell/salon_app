@@ -1,10 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-import './integerationform.dart';
-import 'integeration.dart';
+
+import '../settings/integerationform.dart';
+import '../settings/integeration.dart';
 
 
 
@@ -48,7 +48,7 @@ class _PointOfSaleState extends State<PointOfSale> {
               },
             ),
             SettingsTile(
-              image: 'assets/settings/bell.png',
+              image: 'assets/settings/tax.png',
               text: 'Notification',
               onPressed: () {
                 Get.to(()=>const InteregerationForm());
@@ -58,7 +58,7 @@ class _PointOfSaleState extends State<PointOfSale> {
               },
             ),
             SettingsTile(
-              image: 'assets/settings/list.png',
+              image: 'assets/settings/software-engineer.png',
               text: 'Custom Field',
               onPressed: () {
                 Get.to(()=>const InteregerationForm());
@@ -68,7 +68,7 @@ class _PointOfSaleState extends State<PointOfSale> {
               },
             ),
             SettingsTile(
-              image: 'assets/settings/google-forms.png',
+              image: 'assets/settings/map.png',
               text: 'Form',
               onPressed: () {
                 Get.to(()=>const InteregerationForm());
@@ -78,7 +78,7 @@ class _PointOfSaleState extends State<PointOfSale> {
               },
             ),
             SettingsTile(
-              image: 'assets/settings/booking.png',
+              image: 'assets/settings/shelf.png',
               text: 'Booking settings',
               onPressed: () {
                 Get.to(()=>const InteregerationForm());
@@ -88,7 +88,27 @@ class _PointOfSaleState extends State<PointOfSale> {
               },
             ),
             SettingsTile(
-              image: 'assets/settings/software-engineer.png',
+              image: 'assets/settings/medal.png',
+              text: 'Google Calendar',
+              onPressed: () {
+                Get.to(()=>const InteregerationForm());
+                if (kDebugMode) {
+                  print("I am tapped");
+                }
+              },
+            ),
+            SettingsTile(
+              image: 'assets/settings/google-authenticator.png',
+              text: 'Google Calendar',
+              onPressed: () {
+                Get.to(()=>const InteregerationForm());
+                if (kDebugMode) {
+                  print("I am tapped");
+                }
+              },
+            ),
+            SettingsTile(
+              image: 'assets/settings/bill.png',
               text: 'Google Calendar',
               onPressed: () {
                 Get.to(()=>const InteregerationForm());

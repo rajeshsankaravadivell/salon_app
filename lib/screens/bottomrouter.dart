@@ -51,73 +51,7 @@ class _BottomNavRouterState extends State<BottomNavRouter> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 0,
-        toolbarHeight: getHeight(context)*0.1,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: CircleAvatar(
-              radius: 30,
-              backgroundColor: Colors.redAccent,
-              child: Image.network('https://cdn-icons-png.flaticon.com/512/2202/2202090.png',fit: BoxFit.fitWidth,),
-            ),
-          ),
-        ],
-        title: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: TextFormField(
 
-            decoration: InputDecoration(
-              suffixIcon: const Icon(Icons.search,color: Colors.red,),
-
-
-              labelText: 'Search',
-              labelStyle:
-              const TextStyle(
-                fontFamily: 'Lexend Deca',
-                color: Color(0xFF95A1AC),
-                fontSize: 14,
-                fontWeight: FontWeight.normal,
-              ),
-              hintText: 'Type Your Text Here...',
-              hintStyle:
-              const TextStyle(
-                fontFamily: 'Lexend Deca',
-                color: Color(0xFF95A1AC),
-                fontSize: 14,
-                fontWeight: FontWeight.normal,
-              ),
-              enabledBorder: OutlineInputBorder(
-                borderSide: const BorderSide(
-                  color: Color(0xFFEE4E3A),
-                  width: 0.5,
-                ),
-                borderRadius: BorderRadius.circular(9),
-              ),
-              focusedBorder: OutlineInputBorder(
-                borderSide: const BorderSide(
-                  color: Color(0xFFEE4E3A),
-                  width: 0.5,
-                ),
-                borderRadius: BorderRadius.circular(9),
-              ),
-              filled: false,
-              fillColor: const Color(0xFFFBEEE2),
-
-            ),
-            style:
-            const TextStyle(
-              fontFamily: 'Lexend Deca',
-              color: Color(0xFF2B343A),
-              fontSize: 14,
-              fontWeight: FontWeight.normal,
-            ),
-          ),
-        ),
-        backgroundColor: Colors.white,
-
-      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ),

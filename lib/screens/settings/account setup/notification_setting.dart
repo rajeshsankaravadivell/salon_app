@@ -326,7 +326,7 @@ class SwitchRow extends StatelessWidget {
         Switch(value: value, onChanged: onChanged),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
-          child: Text(content),
+          child: Text(content,textAlign: TextAlign.justify,overflow:TextOverflow.ellipsis ,),
         ),
       ],
     );

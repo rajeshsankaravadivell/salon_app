@@ -7,7 +7,7 @@ import 'package:salon_app/screens/quicksale.dart';
 import 'package:salon_app/screens/settings/account%20setup/accountsetup.dart';
 import 'package:salon_app/screens/settings/settings/integeration.dart';
 import 'package:salon_app/screens/settings/settings/integerationhome.dart';
-import 'package:salon_app/screens/settings/settings/pointofsale.dart';
+import 'package:salon_app/screens/settings/point%20of%20sale/pointofsale.dart';
 import 'package:salon_app/widgets/chart.dart';
 import 'package:salon_app/widgets/chart2.dart';
 
